@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.guinproductions.behavioralpatterns.activity.NewNote"
+    tools:showIn="@layout/activity_new_note">
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+android:id="@+id/view_date"
+    android:padding="4dp"
+    android:text="Date"/>
+
+    <TextView
+        android:id="@+id/view_time"
+        android:layout_below="@+id/view_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="4dp"
+        android:text="Time"/>
+
+        <EditText
+            android:layout_below="@+id/view_time"
+            android:id="@+id/edit_note"
+            android:layout_margin="8dp"
+            android:padding="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/apptheme_edit_text_holo_light"
+            android:gravity="top"
+            android:hint="@string/notes"
+            android:inputType="textMultiLine"
+            android:maxLines="15"
+            android:minLines="15"
+            android:elevation="5dp"
+          android:shadowDx="@integer/google_play_services_version"
+            android:shadowDy="@integer/google_play_services_version"
+            android:scrollbars="vertical"
+            tools:layout_editor_absoluteY="8dp"
+            tools:layout_editor_absoluteX="8dp" />
+
+
+
+</RelativeLayout>
